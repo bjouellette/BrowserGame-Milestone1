@@ -1,4 +1,5 @@
 **General Requirements**
+
 This is a solo project!
 Just to clarify, you may do the same game as another student, but you may not work together
 This game cannot be a game or assignment we've already done in class
