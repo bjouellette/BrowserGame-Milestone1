@@ -21,7 +21,7 @@ var trivia = {
         q1: 'After 1 year of employment employees will receive ____ vacation days',
         q2: 'How long do you have to work for the company before you qualify for benefits if you are a full-time employee?',
         q3: 'If you damage a company or customer vehicle, you will be required to pay ________ if you are found at fault.',
-        q4: 'Which of the following is a holiday that Cable Dahmer does not grant Holiday Pay for?',
+        q4: 'Which of the following is a holiday that our company does not grant Holiday Pay for?',
         q5: "What program is used to clock in and out everyday?",
 
     },
@@ -41,17 +41,16 @@ var trivia = {
         q5: 'Paycor',
 
     },
-    // trivia methods
-    // method to initialize game
+    // start game
     startGame: function () {
-        // restarting game results
+        // resetting game 
         trivia.currentSet = 0;
         trivia.correct = 0;
         trivia.incorrect = 0;
         trivia.unanswered = 0;
         clearInterval(trivia.timerId);
 
-        // show game section
+        // show game 
         $('#game').show();
 
         //  empty last results
@@ -60,10 +59,14 @@ var trivia = {
         // show timer
         $('#timer').text(trivia.timer);
 
-        // remove start button
+        // hide start button
         $('#start').hide();
 
+        //show timer
         $('#remaining-time').show();
+
+        //hide instructions
+        $('#info').hide();
 
         // ask first question
         trivia.nextQuestion();
@@ -72,7 +75,7 @@ var trivia = {
     // method to loop through and display questions and options 
     nextQuestion: function () {
 
-        // set timer to 20 seconds each question
+        // set timer to 10 seconds each question
         trivia.timer = 10;
         $('#timer').removeClass('last-seconds');
         $('#timer').text(trivia.timer);
@@ -89,15 +92,15 @@ var trivia = {
         // an array of all the user options for the current question
         var questionOptions = Object.values(trivia.options)[trivia.currentSet];
 
-        // creates all the trivia guess options in the html
+        // adds all the trivia  options in  html
         $.each(questionOptions, function (index, key) {
-            $('#options').append($('<button class="option btn btn-info btn-lg">' + key + '</button>'));
+            $('#options').append($('<button class="option btn btn-lg">' + key + '</button>'));
         })
 
     },
-    // method to decrement counter and count unanswered if timer runs out
+
     timerRunning: function () {
-        // if timer still has time left and there are still questions left to ask
+        // questions left to ask and still have time on timer
         if (trivia.timer > -1 && trivia.currentSet < Object.keys(trivia.questions).length) {
             $('#timer').text(trivia.timer);
             trivia.timer--;
@@ -121,10 +124,10 @@ var trivia = {
                 .html('<h3>Thank you for playing!</h3>' +
                     '<p>Correct: ' + trivia.correct + '</p>' +
                     '<p>Incorrect: ' + trivia.incorrect + '</p>' +
-                    '<p>Unaswered: ' + trivia.unanswered + '</p>' +
+                    '<p>Unanswered: ' + trivia.unanswered + '</p>' +
                     '<p>Please play again!</p>');
 
-            // hide game sction
+            // hide game section
             $('#game').hide();
 
             // show start button to begin a new game
