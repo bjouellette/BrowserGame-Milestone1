@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: white;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 20%;
+   margin-top: 15%;
 }
 h1 { 
     text-align: center;
@@ -16,3 +16,20 @@ h1 {
   background-color: cornflowerblue;
 }
 
+.last-seconds{
+  color: red;
+}
+
+.option {
+  margin: 20px;
+  font-size: 25px;
+  background-color: cornflowerblue;
+}
+
+.text-muted{
+  color: cornflowerblue;
+}
+
+.row {
+  text-align: center;
+}
