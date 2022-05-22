@@ -9,6 +9,11 @@ h1 {
     font-size: 90px;
 
 }
+
+.remaining-time{
+  display: none;
+}
+
 .jumbotron { background-color: black;
 }
 

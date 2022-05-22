@@ -41,6 +41,8 @@ var trivia = {
         q5: 'Paycor',
 
     },
+
+
     // start game
     startGame: function () {
         // resetting game 
