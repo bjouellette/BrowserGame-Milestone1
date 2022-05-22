@@ -9,52 +9,10 @@ h1 {
     font-size: 90px;
 
 }
-
-#countdown {
-    background-color: cornflowerblue;
-    font-size: 80px;
-    width: 50%;
-    text-align: center;
+.jumbotron { display: flex; flex-wrap: wrap; background-color: black;
 }
 
-.container { display: flex; flex-wrap: wrap; 
+#start{
+  background-color: cornflowerblue;
 }
 
-.box { 
-  flex-grow: 1; 
-  width: calc(33% - 2px); 
-  margin: 2px;
-  height: 100px; 
-  background: cornflowerblue;
-  font-size: 40px;
- }
-
- .box2 { 
-  flex-grow: 1; 
-  width: calc(33% - 2px); 
-  margin: 2px;
-  height: 100px; 
-  background: coral;
-  font-size: 40px;
- }
-
-#start-button {
-    background-color: white;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    line-height: 32px;
-    border-radius: 40px;
-    border:none;
-    outline: none;
-    width: 100%;
-    font-size: 48px;
-    padding: 30px 0;
-    cursor: pointer;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-   
-  }
-  
-  #start-button:hover {
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.26), 0 4px 15px 0 rgba(0, 0, 0, 0.26);
-    background-color: cornflowerblue;
-  }

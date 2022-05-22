@@ -21,3 +21,7 @@ The game should have a Readme.md file in the GitHub repository that describes th
 Bonus Ideas
 Make persistent scores in your browser's localStorage
 Add interesting music or sound effects to your game
+
+**Inspiration**
+
+I conduct our new hire orientation at my company and have been using quizlet for our training quiz and wanted to be able to make my own where it actually gives them a clear score at the end of it.
