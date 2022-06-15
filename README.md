@@ -1,6 +1,6 @@
 **Inspiration**
 
-I conduct our new hire orientation at my company and have been using quizlet for our training quiz and wanted to be able to make my own where it actually gives them a clear score at the end of it.
+Project Revision - Connect 4 Game
 
 **General Requirements**
 
